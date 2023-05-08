@@ -7,10 +7,6 @@
     <title>index page</title>
 </head>
 <body>
-    
-    <style>
-
-    </style>
 
     <button id="loginButton" style="display: none;">Войти</button>
     <button id="logoutButton" style="display: none;">Выйти</button>
@@ -20,6 +16,19 @@
     <button id="eventButton1">CLICK event</button>
     <button id="eventButton2">OPEN PAGE event</button>
     <button id="eventButton3">LIKE event</button>
+
+    <br />
+    <br />
+
+    <div style="border: 2px solid; padding: 8px; width: max-content;">
+        <h3>API link example</h3>
+        <a href="/api/getEvents" target="_blank">/api/getEvents</a> <br />
+        <a href="/api/getEventsByUser" target="_blank">/api/getEventsByUser</a> <br />
+        <a href="/api/getEventsByStatusUser" target="_blank">/api/getEventsByStatusUser</a> <br />
+        <a href="/api/getEvents?eventName=click" target="_blank">/api/getEvents?eventName=click</a> <br />
+        <a href="/api/getEventsByUser?eventName=click" target="_blank">/api/getEventsByUser?eventName=click</a> <br />
+        <a href="/api/getEvents?startDate=2023-22-22" target="_blank">/api/getEvents?startDate=2023-22-22</a> <br />
+    </div>
 
     <script>
         function sendRequest(path, method, body) {
